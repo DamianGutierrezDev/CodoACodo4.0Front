@@ -4,141 +4,103 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sobre mi</title>
-    <link rel="stylesheet" href="css/estiloHobbie.css">
+    <title>Sobre mí</title>
+    <link rel="stylesheet" href="css/portfolio-theme.css">
     <link rel="stylesheet" href="css/all-html.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/footer.css">
-    <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">  
+    <link rel="stylesheet" href="css/estiloHobbie.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 </head>
 <body>
-  <header>
-    <h1 class="animate__animated animate__fadeInRight">TPO Front Integrador - HTML CSS Bootstrap </h1>
-</header>
-  <main>
-    <div class="arriba-centrado">
-      <section class="secti-Menu">
-          <nav class="menu-simple menu">
-            <ul>
-              <li><a href="index.html">Inicio</a></li>
-                      <li><a href="sobreMi.html">Sobre mi</a></li>
-                      <li><a href="conocimiento.html">Conocimientos</a></li>
-                      <li><a href="contacto.html" >Contacto</a></li>
-                      <li> <a href="prueba.html">Hobbie</a></li>
-          </ul>
-          </nav>	
-      </section>
-  </div>
-    <!-- Esta parte de la página está organizada con grid-->
-    <div class="container-grid">
-      <div class="item-hobbie">
-        <img src="img/Galeria Hobbie/musica.jpg" alt="" class="item-img">
-        <div class="item-text">
-          <h3>Musica</h3>
-          <p>Me gusta escuchar nuevas bandas de música. Siempre escucho una nueva banda cada 2 meses</p>
+    <header class="site-header">
+        <div class="container header-inner">
+            <div class="brand">Codo a Codo</div>
+            <nav class="main-nav" aria-label="Navegación principal">
+                <a href="index.html">Inicio</a>
+                <a href="sobreMi.html" class="active">Proyecto</a>
+                <a href="conocimiento.html">Tecnologías</a>
+                <a href="contacto.html">Contacto</a>
+                <a href="prueba.html">Hobbie</a>
+            </nav>
         </div>
-      </div>
-      <div class="item-hobbie">
-        <img src="img/Galeria Hobbie/cocinar.jpg" alt="" class="item-img">
-        <div class="item-text">
-          <h3>Cocina</h3>
-          <p>Con el aislamiento obligatorio comencé a cocinar y es un mundo donde me estoy metiendo</p>
+    </header>
+
+    <main class="page-shell">
+        <section class="section-shell">
+            <div class="section-header">
+                <p class="eyebrow">Perfil personal</p>
+                <h2>Más allá del código</h2>
+            </div>
+
+            <div class="hobby-grid">
+                <article class="item-hobbie">
+                    <img src="img/Galeria Hobbie/musica.jpg" alt="Música" class="item-img">
+                    <div class="item-text">
+                        <h3>Música</h3>
+                        <p>Me gusta escuchar nuevas bandas y descubrir nuevos sonidos que me inspiren.</p>
+                    </div>
+                </article>
+                <article class="item-hobbie">
+                    <img src="img/Galeria Hobbie/cocinar.jpg" alt="Cocina" class="item-img">
+                    <div class="item-text">
+                        <h3>Cocina</h3>
+                        <p>Con el tiempo libre aprendí a cocinar y me gusta experimentar con nuevas recetas.</p>
+                    </div>
+                </article>
+                <article class="item-hobbie">
+                    <img src="img/Galeria Hobbie/diseño.jpg" alt="Diseño" class="item-img">
+                    <div class="item-text">
+                        <h3>Diseño</h3>
+                        <p>Me interesa el diseño visual y la forma en que una página comunica su mensaje.</p>
+                    </div>
+                </article>
+                <article class="item-hobbie">
+                    <img src="img/Galeria Hobbie/leer.jpg" alt="Lectura" class="item-img">
+                    <div class="item-text">
+                        <h3>Lectura</h3>
+                        <p>Trato de dedicar tiempo a la lectura para desconectarme y ampliar mi mirada.</p>
+                    </div>
+                </article>
+                <article class="item-hobbie">
+                    <img src="img/Galeria Hobbie/PerroGatoJugando.jpg" alt="Voluntariado" class="item-img">
+                    <div class="item-text">
+                        <h3>Voluntariado</h3>
+                        <p>Actualmente formo parte de una organización que ayuda a animales que lo necesitan.</p>
+                    </div>
+                </article>
+                <article class="item-hobbie">
+                    <img src="img/Galeria Hobbie/series y peliculas.jpg" alt="Series y películas" class="item-img">
+                    <div class="item-text">
+                        <h3>Series y películas</h3>
+                        <p>Disfruto de momentos tranquilos para descansar y explorar nuevas historias.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container-footer-all">
+            <div class="container-body">
+                <div class="colum1">
+                    <h1>Proyecto final - Codo a codo</h1>
+                    <p>Este proyecto muestra la evolución del curso: aprender fundamentos, construir diseño y poner en práctica la resolución de problemas reales.</p>
+                </div>
+                <div class="colum2">
+                    <h1>Redes Sociales</h1>
+                    <div class="row"><a href="https://www.facebook.com/damian.g.carp" target="_blank" rel="noreferrer"><img src="img/Logos/facebook.png" alt="Facebook"></a><label>Facebook</label></div>
+                    <div class="row"><a href="https://www.facebook.com/damian.g.carp" target="_blank" rel="noreferrer"><img src="img/Logos/twitter.png" alt="Twitter"></a><label>Twitter</label></div>
+                    <div class="row"><a href="https://www.instagram.com/damian.g.carp/" target="_blank" rel="noreferrer"><img src="img/Logos/instagram.png" alt="Instagram"></a><label>Instagram</label></div>
+                </div>
+                <div class="colum3">
+                    <h1>Información de contacto</h1>
+                    <div class="row2"><img src="img/Logos/house.png" alt="Domicilio"><label>Merlo, GBA</label></div>
+                    <div class="row2"><img src="img/Logos/smartphone.png" alt="Teléfono"><label>1122544407</label></div>
+                    <div class="row2"><img src="img/Logos/contact.png" alt="Correo"><label>dami.gutierrez92</label></div>
+                </div>
+            </div>
         </div>
-      </div>
-      
-      <div class="item-hobbie">
-        <img src="img/Galeria Hobbie/diseño.jpg" alt="" class="item-img">
-        <div class="item-text">
-          <h3>Diseño</h3>
-          <p>Me gusta crear diseños, ya sean de paginas webs o circuitos electricos .</p>
-        </div>
-      </div>
-      
-      <div class="item-hobbie">
-        <img src="img/Galeria Hobbie/leer.jpg" alt="" class="item-img">
-        <div class="item-text">
-          <h3>Lectura</h3>
-          <p>En lo posible trato de leer y no estar tan al pendiente de la tecnologia.</p>
-        </div>
-      </div>
-      
-      
-      <div class="item-hobbie">
-        <img src="img/Galeria Hobbie/PerroGatoJugando.jpg" alt="" class="item-img">
-        <div class="item-text">
-          <h3>Voluntariado</h3>
-          <p>Actualmente soy voluntario en una ONG</p>
-        </div>
-      </div>
-      
-      <div class="item-hobbie">
-        <img src="img/Galeria Hobbie/series y peliculas.jpg" alt="" class="item-img">
-        <div class="item-text">
-          <h3>Series y peliculas</h3>
-          <p>El domingo a la tarde es un buen momento para despejar la mente con entrenemiento.</p>
-        </div>
-      </div>
-    </div>
-  </main>
-  <footer>
-    <!--  Esta es la caja principal del footer-->
-    <div class="container-footer-all">
-         <!-- Esta caja es la que conteiene las 3 "columnas", 
-             mi idea es que al achicar las columnas esten 1 abajo de la otra   -->
-         <div class="container-body">
-
-             <!--La primer columna donde tengo información-->
-             <div class="colum1">
-                 <h1>Damian Gutierrez - Codo a codo</h1>
-                 <p>Nuestros cursos están destinado a personas jóvenes y adultas, que busquen desarrollarse profesional y personalmente, ampliando sus oportunidades laborales de acuerdo a los desafíos que plantea el Siglo XXI.
-
-                    El objetivo es brindar herramientas que faciliten la inserción laboral en el sector IT, necesarias para mejorar la empleabilidad de las personas..</p>
-
-             </div>
-                    <!--Segunda columna donde tengo Redes sociales-->
-             <div class="colum2">
-
-                 <h1>Redes Sociales</h1>
-
-                 <div class="row">
-                     <a href="https://www.facebook.com/damian.g.carp" target="_blank"><img src="img/Logos/facebook.png" ></a>
-                     <label>Facebook</label>
-                 </div>
-                 <div class="row">
-                    <a href="https://www.facebook.com/damian.g.carp" target="_blank"><img src="img/Logos/twitter.png"> </a> 
-                     <label>Twitter</label>
-                 </div>
-                 <div class="row">
-                    <a href="https://www.instagram.com/damian.g.carp/" target="_blank"><img src="img/Logos/instagram.png"> </a> 
-                     <label>Instagram</label>
-                 </div>
-    
-             </div>
-              <!--Tercer columna donde tengo información-->
-             <div class="colum3">
-
-                 <h1>Informacion Contactos</h1>
-
-                 <div class="row2">
-                     <img src="img/Logos/house.png">
-                     <label>Merlo, GBA</label>
-                 </div>
-
-                 <div class="row2">
-                     <img src="img/Logos/smartphone.png">
-                     <label>1122544407</label>
-                 </div>
-
-                 <div class="row2">
-                     <img src="img/Logos/contact.png">
-                      <label>dami.gutierrez92</label>
-                 </div>
-
-             </div>
-
-         </div>
-     
-     </div>
- </footer>
+    </footer>
 </body>
 </html>

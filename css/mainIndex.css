@@ -1,161 +1,332 @@
+:root {
+    --bg: #07121f;
+    --bg-soft: #0d1b2a;
+    --panel: rgba(15, 28, 42, 0.9);
+    --panel-strong: #101f32;
+    --primary: #66d9e8;
+    --secondary: #ffb454;
+    --text: #edf7ff;
+    --muted: #a8bfd6;
+    --border: rgba(148, 163, 184, 0.2);
+    --shadow: 0 24px 60px rgba(3, 7, 18, 0.35);
+    --radius: 24px;
+}
 
-*{
+* {
     box-sizing: border-box;
 }
 
-/*Configuracion de la caja*/
-.caja-contenido-curso{
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background:
+        radial-gradient(circle at top, rgba(102, 217, 232, 0.18), transparent 30%),
+        linear-gradient(180deg, var(--bg) 0%, #0b1422 100%);
+    color: var(--text);
+    line-height: 1.6;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.container {
+    width: min(1120px, calc(100% - 2rem));
+    margin: 0 auto;
+}
+
+.site-header {
+    position: sticky;
+    top: 0;
+    z-index: 20;
+    background: rgba(7, 18, 31, 0.75);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--border);
+}
+
+.header-inner {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    text-align: center;
-    margin-top: 50px;
-}
-
-/*Fondo de la las cajitas de las cajas de los cursos (como tengo una imagen encima el fondo queda de 
-marco */
-.caja-curso-css3, .caja-curso-html5, .caja-curso-bootstrap {
-    background-image: url(../img/Fondos/fondo\ raro\ oscuro.jpg);
-}
-/* Tanmaño de las imagenes de la caja de cursos*/
-.caja-curso-css3 img, .caja-curso-html5 img, .caja-curso-bootstrap img{
-    width: 300px;
-    height: 200px;
-}
-/* color de los textos en la caja de cursos*/
-.caja-curso-css3 p, .caja-curso-html5 p, .caja-curso-bootstrap p{
-    color:darkorange;
-    }
-
- /* Margen aplicado a las cajas de cursos*/   
-.caja-curso-css3, .caja-curso-html5, .caja-curso-bootstrap{
-
-    margin: 10px;
-}
-/*formato de parrafos*/
-p{
-    font-size: 40px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-}
-
-/*Formato de los parrafos dentro de dicha caja*/
-.section-container p{
-
-    font-size: 50px;
-}
-
-/*Formato de caja .logo-principal*/
-.logo-principal{
-    display: flex;
-    justify-content: space-around;
     align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 1rem 0;
 }
 
-/*Formato de imagenes que estan dentro de .logo-principal*/
-.logo-principal img{
-    width: 30%;
+.brand {
+    font-size: 1.15rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--primary);
+}
+
+.main-nav {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+
+.main-nav a {
+    padding: 0.7rem 1rem;
+    border-radius: 999px;
+    color: var(--muted);
+    transition: all 0.2s ease;
+    font-weight: 600;
+}
+
+.main-nav a:hover,
+.main-nav a.active {
+    background: rgba(102, 217, 232, 0.12);
+    color: var(--text);
+}
+
+.page-shell {
+    padding-bottom: 3rem;
+}
+
+.hero {
+    padding: 4rem 0 2rem;
+}
+
+.hero-grid {
+    display: grid;
+    grid-template-columns: 1.15fr 0.85fr;
+    align-items: center;
+    gap: 2rem;
+}
+
+.eyebrow {
+    margin: 0 0 0.8rem;
+    color: var(--secondary);
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    font-size: 0.78rem;
+    font-weight: 700;
+}
+
+.hero-copy h1 {
+    margin: 0;
+    font-size: clamp(2.5rem, 5vw, 4.2rem);
+    line-height: 1.1;
+    color: var(--text);
+}
+
+.lead {
+    max-width: 580px;
+    margin-top: 1.25rem;
+    color: var(--muted);
+    font-size: 1.06rem;
+}
+
+.hero-actions {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-top: 1.75rem;
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.9rem 1.5rem;
+    border-radius: 999px;
+    border: 1px solid transparent;
+    font-weight: 700;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, var(--primary), #7fe7ff);
+    color: #07121f;
+    box-shadow: 0 16px 30px rgba(102, 217, 232, 0.25);
+}
+
+.btn-secondary {
+    border-color: var(--border);
+    color: var(--text);
+    background: rgba(255, 255, 255, 0.02);
+}
+
+.hero-visual {
+    position: relative;
+}
+
+.hero-visual::before {
+    content: "";
+    position: absolute;
+    inset: -1rem -1rem -1rem auto;
+    width: 70%;
+    height: 70%;
+    background: rgba(102, 217, 232, 0.14);
     border-radius: 50%;
-    margin: 20px;
-
+    filter: blur(30px);
 }
 
-/*Formato de los h2 que están dentro de .logo-principal*/
-.logo-principal h2{
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 60px;
-    color: blanchedalmond;
+.hero-visual img {
+    position: relative;
+    width: 100%;
+    max-width: 520px;
+    margin-left: auto;
+    border-radius: var(--radius);
+    object-fit: cover;
+    box-shadow: var(--shadow);
+    border: 1px solid rgba(255, 255, 255, 0.08);
 }
 
-/* Alineación de texto de la caja .descripcion-curso*/
-.descripcion-curso{
+.highlights,
+.cards-section {
+    padding-top: 2rem;
+}
+
+.section-header {
+    margin-bottom: 1.5rem;
+}
+
+.section-header h2 {
+    margin: 0;
+    font-size: clamp(1.8rem, 3vw, 2.6rem);
+    color: var(--text);
+}
+
+.description-box {
+    background: rgba(17, 23, 34, 0.8);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 2rem;
+    box-shadow: var(--shadow);
+}
+
+.badges {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.fa-graduation-cap {
+    font-size: 2rem;
+    color: var(--secondary);
+}
+
+.info-front {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 0.75rem;
     text-align: center;
 }
 
-
-/*Formato de h2 dentro de .descripcion-curso*/
-.descripcion-curso h2{
-    font-size: 30px;
-    color: whitesmoke;
+.info-front li {
+    padding: 0.8rem 1rem;
+    border-radius: 14px;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid var(--border);
+    color: var(--text);
+    font-weight: 600;
 }
 
-/*formato de li de la caja .info-front, por ejemplo sacandola las viñetas*/
-.info-front li{
-    list-style: none;
-    text-decoration: white;
-    font-family: fantasy;
-    color: whitesmoke;
-    font-size: 25px;
+.caja-contenido-curso {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1.5rem;
+    margin-top: 1.5rem;
 }
-.fa-graduation-cap{
-    background-color:transparent;
-    font-size: 40px;
-    color: white;
+
+.caja-curso-html5,
+.caja-curso-css3,
+.caja-curso-bootstrap {
+    background: linear-gradient(180deg, rgba(17, 28, 42, 0.95), rgba(8, 19, 29, 0.95));
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    transition: transform 0.2s ease, border-color 0.2s ease;
 }
-/*Aca las difentes medias o formatos dependiendo del tamaño de la pagina
-rangos 0 a 400px, 401 a 1200 px y 12001 px en adelante
-Por favor de poder mejorarlo hagamelo saber que me interesa mucho este tema*/
-@media screen and (max-width:400px){
-    .logo-principal img{
-        width: 80px;
-        height: 40px;
+
+.caja-curso-html5:hover,
+.caja-curso-css3:hover,
+.caja-curso-bootstrap:hover {
+    transform: translateY(-5px);
+    border-color: rgba(102, 217, 232, 0.5);
+}
+
+.caja-curso-html5 img,
+.caja-curso-css3 img,
+.caja-curso-bootstrap img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.caja-curso-html5 p,
+.caja-curso-css3 p,
+.caja-curso-bootstrap p {
+    margin: 0;
+    padding: 1.2rem 1rem 1.5rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--secondary);
+    text-align: center;
+}
+
+@media (max-width: 900px) {
+    .hero-grid,
+    .caja-contenido-curso {
+        grid-template-columns: 1fr;
     }
-    .logo-principal h2{
-        font-size: 20px;
+
+    .hero {
+        padding-top: 2.5rem;
     }
-    .caja-curso-html5 img, .caja-curso-css3 img, .caja-curso-bootstrap img{
-        display: flex;
+
+    .hero-copy {
+        text-align: center;
+    }
+
+    .hero-actions {
+        justify-content: center;
+    }
+
+    .hero-visual img {
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 640px) {
+    .header-inner {
         flex-direction: column;
-        width: 80px;
-        height: 50px;
-    }  
-    .caja-curso-html5 p, .caja-curso-css3 p, .caja-curso-bootstrap p{
+        align-items: flex-start;
+    }
 
-    font-size: 10px;
+    .main-nav {
+        width: 100%;
     }
-    .descripcion-curso h2{
-        font-size: 30px;
-        color: burlywood;
-    }
-    .info-front li{
-        font-size: 25px;
-        color: burlywood;
-    }
-    .fa-graduation-cap{
-        background-color:transparent;
-        font-size: 40px;
-        color: burlywood;
-    }
-}
 
-@media screen and (min-width:401px) and (max-width: 1200px){
-    .logo-principal img{
-        width: 400px;
-        height: 150px;
+    .main-nav a {
+        flex: 1 1 calc(50% - 0.5rem);
+        text-align: center;
     }
-    .logo-principal h2{
-        font-size: 30px;
-    }
-    .caja-curso-html5 img, .caja-curso-css3 img, .caja-curso-bootstrap img{
-        display: flex;
-        flex-direction: column;
-        width: 350px;
-        height: 250px;
-    }   
-    .caja-curso-html5 p, .caja-curso-css3 p, .caja-curso-bootstrap p{
 
-    font-size: 30px;
-    }
-    .descripcion-curso h2{
-        font-size: 40px;
-        color: cyan;
-    }
-    .info-front li{
-        font-size: 35px;
-        color: cyan;
-    }
-    .fa-graduation-cap{
-        background-color:transparent;
-        font-size: 40px;
-        color: cyan;
+    .description-box {
+        padding: 1.25rem;
     }
 }

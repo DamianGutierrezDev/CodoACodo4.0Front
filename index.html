@@ -5,140 +5,139 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="css/mainIndex.css">
+    <title>Proyecto Codo a Codo | Front End</title>
+    <meta name="description" content="Proyecto integrador del curso de Codo a Codo, desarrollado con HTML, CSS y Bootstrap.">
     <link rel="stylesheet" href="css/all-html.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <script src="https://kit.fontawesome.com/5b8c4cd506.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/mainIndex.css">
 </head>
-<!--Comienzo body pagina ideax-->
-<body>
-    <header>
-        <!--animate__backInLeft-->
-        <h1 class="animate__animated animate__backInLeft">TPO Front Integrador - HTML CSS Bootstrap </h1>
 
-    </header>
-    <!--Un menu visto en clase-->
-    <div class="arriba-centrado">
-        <section class="secti-Menu">
-            <nav class="menu-simple menu">
-                <ul>
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="sobreMi.html">Sobre mi</a></li>
-                    <li><a href="conocimiento.html">Conocimientos</a></li>
-                    <li><a href="contacto.html">Contacto</a></li>
-                    <li> <a href="prueba.html">Hobbie</a></li>
-                </ul>
+<body>
+    <header class="site-header">
+        <div class="container header-inner">
+            <div class="brand" aria-label="Proyecto Codo a Codo">Codo a Codo</div>
+            <nav class="main-nav" aria-label="Navegación principal">
+                <a href="index.html" class="active">Inicio</a>
+                <a href="sobreMi.html">Proyecto</a>
+                <a href="conocimiento.html">Tecnologías</a>
+                <a href="contacto.html">Contacto</a>
+                <a href="prueba.html">Hobbie</a>
             </nav>
-        </section>
-    </div>
-    <main>
-        <!--Aca comienza el inicio, logo principal acompañado de un texto (los pongo uno al lado del
-            otro con flexbox)
-        -->
-        <section>
-            <div class="logo-principal">
-                <img src="img/Carrusel/shutterstock_1078387013-scaled.jpg" alt="logo-principal-foto">
-                <h2 class="animate__animated animate__zoomIn">Programador Full Stack </h2>
+        </div>
+    </header>
+
+    <main class="page-shell">
+        <section class="hero">
+            <div class="container hero-grid">
+                <div class="hero-copy">
+                    <p class="eyebrow">Proyecto integrador</p>
+                    <h1 class="animate__animated animate__zoomIn">Diseñamos una web moderna con HTML, CSS y Bootstrap</h1>
+                    <p class="lead">Este sitio forma parte del curso de Codo a Codo y muestra una práctica real de desarrollo front-end aplicada a una propuesta visual moderna, clara y funcional.</p>
+                    <div class="hero-actions">
+                        <a href="sobreMi.html" class="btn btn-primary">Ver proyecto</a>
+                        <a href="contacto.html" class="btn btn-secondary">Más información</a>
+                    </div>
+                </div>
+
+                <div class="hero-visual">
+                    <img src="img/Carrusel/shutterstock_1078387013-scaled.jpg" alt="Proyecto integrador de Codo a Codo">
+                </div>
             </div>
-            <!--Descripcion curso tiene el contenido apriori que tendremos en esta cursada-->
-            <div class="descripcion-curso">
-                <i class="fas fa-graduation-cap"></i>
-                <i class="fas fa-graduation-cap"></i>
-                <i class="fas fa-graduation-cap"></i>
-                <h2>Trabajo practica Front Integrador</h2>
+        </section>
+
+        <section class="highlights container">
+            <div class="section-header">
+                <p class="eyebrow">Aprendizaje</p>
+                <h2>Curso y práctica de desarrollo web</h2>
+            </div>
+
+            <div class="description-box">
+                <div class="badges" aria-label="Tecnologías estudiadas">
+                    <i class="fas fa-graduation-cap" aria-hidden="true"></i>
+                    <i class="fas fa-graduation-cap" aria-hidden="true"></i>
+                    <i class="fas fa-graduation-cap" aria-hidden="true"></i>
+                </div>
                 <ul class="info-front">
                     <li>HTML</li>
                     <li>HTML5</li>
                     <li>CSS</li>
-                    <li>CCS3</li>
-                    <li>Bootstrap</l1>
-                    <li>JavaScript</l1>
+                    <li>CSS3</li>
+                    <li>Bootstrap</li>
+                    <li>JavaScript</li>
                 </ul>
             </div>
         </section>
-        <!-- Cajas ordenadas con Flexbox-->
-        <section class="caja-contenido-curso">
-            <article class="caja-curso-html5">
-                <img src="img/Contenido/html5.jpg" alt="">
-                <p>HTML5</p>
-            </article>
-            <article class="caja-curso-css3">
-                <img src="img/Contenido/definicion-usos-ventajas-lenguaje-css3-que-es-702x336.jpg" alt="">
-                <p>CSS3</p>
-            </article>
-            <article class="caja-curso-bootstrap">
-                <img src="img/Contenido/bootstrap-social-share.png" alt="">
-                <p>Bootstrap</p>
-            </article>
+
+        <section class="container cards-section">
+            <div class="section-header">
+                <p class="eyebrow">Stack</p>
+                <h2>Tecnologías aplicadas en el proyecto</h2>
+            </div>
+
+            <div class="caja-contenido-curso">
+                <article class="caja-curso-html5">
+                    <img src="img/Contenido/html5.jpg" alt="Logo de HTML5">
+                    <p>HTML5</p>
+                </article>
+                <article class="caja-curso-css3">
+                    <img src="img/Contenido/definicion-usos-ventajas-lenguaje-css3-que-es-702x336.jpg" alt="Logo de CSS3">
+                    <p>CSS3</p>
+                </article>
+                <article class="caja-curso-bootstrap">
+                    <img src="img/Contenido/bootstrap-social-share.png" alt="Logo de Bootstrap">
+                    <p>Bootstrap</p>
+                </article>
+            </div>
         </section>
     </main>
+
     <footer>
-        <!--  Esta es la caja principal del footer-->
         <div class="container-footer-all">
-            <!-- Esta caja es la que conteiene las 3 "columnas", 
-                 mi idea es que al achicar las columnas esten 1 abajo de la otra   -->
             <div class="container-body">
-
-                <!--La primer columna donde tengo información-->
                 <div class="colum1">
-                    <h1>Damian Gutierrez - Codo a codo</h1>
-                    <p>Nuestros cursos están destinado a personas jóvenes y adultas, que busquen desarrollarse
-                        profesional y personalmente, ampliando sus oportunidades laborales de acuerdo a los desafíos que
-                        plantea el Siglo XXI.
-
-                        El objetivo es brindar herramientas que faciliten la inserción laboral en el sector IT,
-                        necesarias para mejorar la empleabilidad de las personas..</p>
-
+                    <h1>Proyecto final - Codo a codo</h1>
+                    <p>Este sitio fue desarrollado como trabajo integrador del curso, con el objetivo de aplicar HTML, CSS, Bootstrap y buenas prácticas de diseño web en una experiencia visual moderna.</p>
                 </div>
-                <!--Segunda columna donde tengo Redes sociales-->
-                <div class="colum2">
 
+                <div class="colum2">
                     <h1>Redes Sociales</h1>
 
                     <div class="row">
-                        <a href="https://www.facebook.com/damian.g.carp" target="_blank"><img
-                                src="img/Logos/facebook.png"></a>
+                        <a href="https://www.facebook.com/damian.g.carp" target="_blank" rel="noreferrer"><img src="img/Logos/facebook.png" alt="Facebook"></a>
                         <label>Facebook</label>
                     </div>
                     <div class="row">
-                        <a href="https://www.facebook.com/damian.g.carp" target="_blank"><img
-                                src="img/Logos/twitter.png"> </a>
+                        <a href="https://www.facebook.com/damian.g.carp" target="_blank" rel="noreferrer"><img src="img/Logos/twitter.png" alt="Twitter"></a>
                         <label>Twitter</label>
                     </div>
                     <div class="row">
-                        <a href="https://www.instagram.com/damian.g.carp/" target="_blank"><img
-                                src="img/Logos/instagram.png"> </a>
+                        <a href="https://www.instagram.com/damian.g.carp/" target="_blank" rel="noreferrer"><img src="img/Logos/instagram.png" alt="Instagram"></a>
                         <label>Instagram</label>
                     </div>
-
                 </div>
-                <!--Tercer columna donde tengo información-->
-                <div class="colum3">
 
-                    <h1>Informacion Contactos</h1>
+                <div class="colum3">
+                    <h1>Información de contacto</h1>
 
                     <div class="row2">
-                        <img src="img/Logos/house.png">
+                        <img src="img/Logos/house.png" alt="Domicilio">
                         <label>Merlo, GBA</label>
                     </div>
 
                     <div class="row2">
-                        <img src="img/Logos/smartphone.png">
+                        <img src="img/Logos/smartphone.png" alt="Teléfono">
                         <label>1122544407</label>
                     </div>
 
                     <div class="row2">
-                        <img src="img/Logos/contact.png">
+                        <img src="img/Logos/contact.png" alt="Correo">
                         <label>dami.gutierrez92</label>
                     </div>
-
                 </div>
-
             </div>
-
         </div>
     </footer>
 </body>

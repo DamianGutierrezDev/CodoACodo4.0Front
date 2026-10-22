@@ -1,130 +1,56 @@
-  
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/estilos.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conocimientos</title>
+    <link rel="stylesheet" href="css/portfolio-theme.css">
     <link rel="stylesheet" href="css/all-html.css">
     <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/mainConocimiento.css">
     <link rel="stylesheet" href="css/footer.css">
-    <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-    <title>Conocimientos</title>
-
-    >
+    <link rel="stylesheet" href="css/mainConocimiento.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 </head>
 <body>
-  <header>
-    <h1 class="animate__animated animate__fadeInDownBig">TPO Front Integrador - HTML CSS Bootstrap </h1>  
-</header>
-
-  <main>
-    <div class="arriba-centrado">
-      <section class="secti-Menu">
-          <nav class="menu-simple menu">
-            <ul>
-              <li><a href="index.html">Inicio</a></li>
-              <li><a href="sobreMi.html">Sobre mi</a></li>
-              <li><a href="conocimiento.html">Conocimientos</a></li>
-              <li><a href="contacto.html" >Contacto</a></li>
-              <li> <a href="prueba.html">Hobbie</a></li>
-          </ul>
-          </nav>	
-      </section>
-    <section class="caja-superior">
-        <div class="caja1">
-            <img src="img/Contenido/cxx.jpg" alt="">
-              <h5>C#</h5>
-          </div>
-        <div class="caja2">
-          <img src="img/Contenido/cc]].png" alt="">
-              <h5>C / C++</h5>
+    <header class="site-header">
+        <div class="container header-inner">
+            <div class="brand">Codo a Codo</div>
+            <nav class="main-nav" aria-label="Navegación principal">
+                <a href="index.html">Inicio</a>
+                <a href="sobreMi.html">Proyecto</a>
+                <a href="conocimiento.html" class="active">Tecnologías</a>
+                <a href="contacto.html">Contacto</a>
+                <a href="prueba.html">Hobbie</a>
+            </nav>
         </div>
+    </header>
 
-        <div class="caja3">
-          <img src="img/Contenido/java.png" alt="">
-              <h5>Java</h5>
+    <main class="page-shell">
+        <section class="section-shell">
+            <div class="section-header">
+                <p class="eyebrow">Stack</p>
+                <h2>Lenguajes y tecnologías</h2>
+            </div>
+            <div class="knowledge-grid">
+                <article class="skill-card"><img src="img/Contenido/cxx.jpg" alt="C#"><h5>C#</h5></article>
+                <article class="skill-card"><img src="img/Contenido/cc]].png" alt="C / C++"><h5>C / C++</h5></article>
+                <article class="skill-card"><img src="img/Contenido/java.png" alt="Java"><h5>Java</h5></article>
+                <article class="skill-card"><img src="img/Contenido/php2.png" alt="Php"><h5>Php</h5></article>
+                <article class="skill-card"><img src="img/Contenido/python.png" alt="Python"><h5>Python</h5></article>
+                <article class="skill-card"><img src="img/Contenido/js.png" alt="JavaScript"><h5>JavaScript</h5></article>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container-footer-all">
+            <div class="container-body">
+                <div class="colum1"><h1>Proyecto final - Codo a codo</h1><p>El objetivo del curso es enseñar fundamentos sólidos, creatividad y trabajo práctico para crear soluciones digitales reales.</p></div>
+                <div class="colum2"><h1>Redes Sociales</h1><div class="row"><a href="https://www.facebook.com/damian.g.carp" target="_blank" rel="noreferrer"><img src="img/Logos/facebook.png" alt="Facebook"></a><label>Facebook</label></div><div class="row"><a href="https://www.facebook.com/damian.g.carp" target="_blank" rel="noreferrer"><img src="img/Logos/twitter.png" alt="Twitter"></a><label>Twitter</label></div><div class="row"><a href="https://www.instagram.com/damian.g.carp/" target="_blank" rel="noreferrer"><img src="img/Logos/instagram.png" alt="Instagram"></a><label>Instagram</label></div></div>
+                <div class="colum3"><h1>Información de contacto</h1><div class="row2"><img src="img/Logos/house.png" alt="Domicilio"><label>Merlo, GBA</label></div><div class="row2"><img src="img/Logos/smartphone.png" alt="Teléfono"><label>1122544407</label></div><div class="row2"><img src="img/Logos/contact.png" alt="Correo"><label>dami.gutierrez92</label></div></div>
+            </div>
         </div>
-      </section>
-    <section class="caja-inferior">
-      <div class="caja4">
-        <img src="img/Contenido/php2.png" alt="">
-              <h5>Php</h5>
-      </div>
-      <div class="caja5">
-        <img src="img/Contenido/python.png" alt="">
-              <h5>Python</h5>
-      </div>
-      <div class="caja6"> 
-        <img src="img/Contenido/js.png" alt="">
-              <h5>JavaScript</h5>
-      </div>
-    </section>
-
-
-
-  </main>
-  <footer>
-    <!--  Esta es la caja principal del footer-->
-    <div class="container-footer-all">
-         <!-- Esta caja es la que conteiene las 3 "columnas", 
-             mi idea es que al achicar las columnas esten 1 abajo de la otra   -->
-         <div class="container-body">
-
-             <!--La primer columna donde tengo información-->
-             <div class="colum1">
-                 <h1>Damian Gutierrez - Codo a codo</h1>
-                 <p>Nuestros cursos están destinado a personas jóvenes y adultas, que busquen desarrollarse profesional y personalmente, ampliando sus oportunidades laborales de acuerdo a los desafíos que plantea el Siglo XXI.
-
-                    El objetivo es brindar herramientas que faciliten la inserción laboral en el sector IT, necesarias para mejorar la empleabilidad de las personas..</p>
-
-             </div>
-                    <!--Segunda columna donde tengo Redes sociales-->
-             <div class="colum2">
-
-                 <h1>Redes Sociales</h1>
-
-                 <div class="row">
-                     <a href="https://www.facebook.com/damian.g.carp" target="_blank"><img src="img/Logos/facebook.png" ></a>
-                     <label>Facebook</label>
-                 </div>
-                 <div class="row">
-                    <a href="https://www.facebook.com/damian.g.carp" target="_blank"><img src="img/Logos/twitter.png"> </a> 
-                     <label>Twitter</label>
-                 </div>
-                 <div class="row">
-                    <a href="https://www.instagram.com/damian.g.carp/" target="_blank"><img src="img/Logos/instagram.png"> </a> 
-                     <label>Instagram</label>
-                 </div>
-    
-             </div>
-              <!--Tercer columna donde tengo información-->
-             <div class="colum3">
-
-                 <h1>Informacion Contactos</h1>
-
-                 <div class="row2">
-                     <img src="img/Logos/house.png">
-                     <label>Merlo, GBA</label>
-                 </div>
-
-                 <div class="row2">
-                     <img src="img/Logos/smartphone.png">
-                     <label>1122544407</label>
-                 </div>
-
-                 <div class="row2">
-                     <img src="img/Logos/contact.png">
-                      <label>dami.gutierrez92</label>
-                 </div>
-
-             </div>
-
-         </div>
-     
-     </div>
- </footer>
+    </footer>
 </body>
 </html>
