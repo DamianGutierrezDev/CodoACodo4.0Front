@@ -1,177 +1,72 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/mainContacto.css">
+    <title>Contacto del proyecto</title>
+    <link rel="stylesheet" href="css/portfolio-theme.css">
     <link rel="stylesheet" href="css/all-html.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/footer.css">
-    <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-    <title>Contacto</title>
+    <link rel="stylesheet" href="css/mainContacto.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 </head>
 <body>
-    <!--Header donde tengo una animacion sobre el texto h1-->
-    <header>
-        <h1 class="animacion-contacto"> TPO Front Integrador - HTML CSS Bootstrap </h1>
-    </header>
-    <!--Menu responsive-->
-    <div class="arriba-centrado">
-        <section class="secti-Menu">
-            <nav class="menu-simple menu">
-                <ul>
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="sobreMi.html">Sobre mi</a></li>
-                    <li><a href="conocimiento.html">Conocimientos</a></li>
-                    <li><a href="contacto.html" >Contacto</a></li>
-                    <li> <a href="prueba.html">Hobbie</a></li>
-                </ul>
+    <header class="site-header">
+        <div class="container header-inner">
+            <div class="brand">Codo a Codo</div>
+            <nav class="main-nav" aria-label="Navegación principal">
+                <a href="index.html">Inicio</a>
+                <a href="sobreMi.html">Proyecto</a>
+                <a href="conocimiento.html">Tecnologías</a>
+                <a href="contacto.html" class="active">Contacto</a>
+                <a href="prueba.html">Hobbie</a>
             </nav>
-        </section>
-    </div>
-    <main>
-        <!--Logica para esta parte
-        Tomo una caja (container-formulario-datos) que ocupe el 90 % del ancho de la pagina
-        Luego creo 2 cajas que ocupen un 50% de su padre para posicionar bien ambas cajas
-        formulario y dato contacto, si bien podia usar un aside me parecio mas interesante
-        realizarlo de esta forma-->
-        <h2>CONTACTO</h2>
-        <!-- Formulario -->
-        <section class="container-formulario-datos" >
+        </div>
+    </header>
+
+    <main class="page-shell">
+        <h2 class="main-title">Consulta del proyecto</h2>
+        <section class="contact-layout">
             <article class="caja-formulario">
-                    <!--Nombre y apellido-->
-                    <form action="#" method="POST" class="item-nombreApellido">
-                        <label for="nomyApe"></label>
-                        <input id="nomyApe" type="text" 
-                        name = "nomyApe" 
-                        placeholder="Ingrese nombre y apellido" required>
-                    </form>
-
-                     <!--Edad-->
-                     <form action="#" method="POST"class="item-edad">
-                            <label for="edad"></label>
-                            </label>
-                            <input id="edad" type="number" 
-                            name = "edad" 
-                            placeholder="Ingrese edad"
-                            min="0" max="200" >
-                      </form>
-                         <!--Numero-->
-                    <form action="#" method="POST"class="item-numero">
-                            <label for="numero"></label>
-                            </label>
-                            <input id="numero" type="number" 
-                            name = "numero" 
-                            placeholder="Ingrese numero"
-                            min="0" max="20" >
-                     </form>
-       
-                    <!--Correo-->
-                    <form action="#" method="POST"  class="item-correo">
-                        <label for="mail"></label>
-                        </label>
-                        <input id="mail" type="email" 
-                        name = "mail" 
-                        placeholder="Ingrese mail"
-                          required >
-                    </form>
-                      <!--Consulta-->
-                     <form action="#" method="POST"  class="item-consulta">
-                        <textarea name="consulta" 
-                        id="consulta" cols="30" rows="10" maxlength="60">
-                        </textarea>
-                    </form>
-                    <div class="input-enviar">
-                        <input type="submit" value="enviar">
-                    </div>
-            </article> <!--Aca termina el formulario-->
-
-            <!--Datos de contacto-->
+                <form class="form-grid" action="#" method="POST">
+                    <input type="text" name="nomyApe" placeholder="Ingrese nombre y apellido" required>
+                    <input type="number" name="edad" placeholder="Ingrese edad" min="0" max="200">
+                    <input type="number" name="numero" placeholder="Ingrese número" min="0" max="20">
+                    <input type="email" name="mail" placeholder="Ingrese mail" required>
+                    <textarea name="consulta" placeholder="Escriba su consulta..."></textarea>
+                    <div class="input-enviar"><input type="submit" value="Enviar"></div>
+                </form>
+            </article>
             <article class="caja-dato-contacto">
                 <div class="contenido-caja-dato">
-                    <h2>Su consulta no molesta</h2>
+                    <h2>¿Quieres saber más?</h2>
                     <ul class="lista-información-empresa">
-                        <li>Empresa número uno</li>
-                        <li> +11 11 1111 1111</li>
-                        <li>Horario de atención</li>
-                        <li>Lunes a sabados: 8 hs a 20 hs  </li>
-                        <li>consultas@programAr.com.ar</li>
+                        <li>Proyecto final de Codo a Codo</li>
+                        <li>Curso: Desarrollo Web Front End</li>
+                        <li>Horario de consulta</li>
+                        <li>Durante el proceso de aprendizaje</li>
+                        <li>contacto@codoacodo.example</li>
                     </ul>
                 </div>
             </article>
         </section>
 
-        <!--Ubicacion-->
-        <section>
-            <article class="container-ubicacion">
-                <h2>UBICACIÓN</h2>
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3280.038094995701!2d-58.673433584767636!3d-34.704219080433546!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc11f21838611%3A0x923bc37126a939fe!2sObarrio%201883%2C%20B1716%20Libertad%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1620564303887!5m2!1ses!2sar"
-                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-            </article>
+        <section class="container-ubicacion">
+            <h2>Ubicación</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3280.038094995701!2d-58.673433584767636!3d-34.704219080433546!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc11f21838611%3A0x923bc37126a939fe!2sObarrio%201883%2C%20B1716%20Libertad%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1620564303887!5m2!1ses!2sar" allowfullscreen="" loading="lazy"></iframe>
         </section>
-
     </main>
-    <footer>
-        <!--  Esta es la caja principal del footer-->
-        <div class="container-footer-all">
-             <!-- Esta caja es la que conteiene las 3 "columnas", 
-                 mi idea es que al achicar las columnas esten 1 abajo de la otra   -->
-             <div class="container-body">
- 
-                 <!--La primer columna donde tengo información-->
-                 <div class="colum1">
-                     <h1>Damian Gutierrez - Codo a codo</h1>
-                     <p>Nuestros cursos están destinado a personas jóvenes y adultas, que busquen desarrollarse profesional y personalmente, ampliando sus oportunidades laborales de acuerdo a los desafíos que plantea el Siglo XXI.
 
-                        El objetivo es brindar herramientas que faciliten la inserción laboral en el sector IT, necesarias para mejorar la empleabilidad de las personas..</p>
- 
-                 </div>
-                        <!--Segunda columna donde tengo Redes sociales-->
-                 <div class="colum2">
- 
-                     <h1>Redes Sociales</h1>
-                     <div class="row">
-                         <a href="https://www.facebook.com/damian.g.carp" target="_blank"><img src="img/Logos/facebook.png" ></a>
-                         <label>Facebook</label>
-                     </div>
-                     <div class="row">
-                        <a href="https://www.facebook.com/damian.g.carp" target="_blank"><img src="img/Logos/twitter.png"> </a> 
-                         <label>Twitter</label>
-                     </div>
-                     <div class="row">
-                        <a href="https://www.instagram.com/damian.g.carp/" target="_blank"><img src="img/Logos/instagram.png"> </a> 
-                         <label>Instagram</label>
-                     </div>
-        
-                 </div>
-                  <!--Tercer columna donde tengo información-->
-                 <div class="colum3">
- 
-                     <h1>Informacion Contactos</h1>
- 
-                     <div class="row2">
-                         <img src="img/Logos/house.png">
-                         <label>Merlo, GBA</label>
-                     </div>
- 
-                     <div class="row2">
-                         <img src="img/Logos/smartphone.png">
-                         <label>1122544407</label>
-                     </div>
- 
-                     <div class="row2">
-                         <img src="img/Logos/contact.png">
-                          <label>dami.gutierrez92</label>
-                     </div>
- 
-                 </div>
- 
-             </div>
-         
-         </div>
-     </footer>
+    <footer>
+        <div class="container-footer-all">
+            <div class="container-body">
+                <div class="colum1"><h1>Proyecto final - Codo a codo</h1><p>Este curso busca formar estudiantes en tecnología con proyectos reales, creatividad y una base sólida para el mundo laboral digital.</p></div>
+                <div class="colum2"><h1>Redes Sociales</h1><div class="row"><a href="https://www.facebook.com/damian.g.carp" target="_blank" rel="noreferrer"><img src="img/Logos/facebook.png" alt="Facebook"></a><label>Facebook</label></div><div class="row"><a href="https://www.facebook.com/damian.g.carp" target="_blank" rel="noreferrer"><img src="img/Logos/twitter.png" alt="Twitter"></a><label>Twitter</label></div><div class="row"><a href="https://www.instagram.com/damian.g.carp/" target="_blank" rel="noreferrer"><img src="img/Logos/instagram.png" alt="Instagram"></a><label>Instagram</label></div></div>
+                <div class="colum3"><h1>Información de contacto</h1><div class="row2"><img src="img/Logos/house.png" alt="Domicilio"><label>Merlo, GBA</label></div><div class="row2"><img src="img/Logos/smartphone.png" alt="Teléfono"><label>1122544407</label></div><div class="row2"><img src="img/Logos/contact.png" alt="Correo"><label>dami.gutierrez92</label></div></div>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
